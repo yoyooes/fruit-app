@@ -1,12 +1,12 @@
-import { Link } from "react-router-dom";
-
+// src/pages/Home.jsx
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-6">
-      <img src="/images/header.jpg" alt="header" className="w-full max-w-3xl rounded-xl" />
-      <Link to="/select" className="px-6 py-3 bg-blue-600 text-white rounded-lg">
-        Start
-      </Link>
+    <div className="mx-auto max-w-5xl p-6">
+      <img src="/assets/header.jpg" alt="header" className="w-full rounded-xl mb-4" />
+      <h1 className="text-2xl font-bold mb-2">Fruit Ripeness Project</h1>
+      <p className="text-slate-600">
+        ระบบวัดความสุกแบบเรียลไทม์ด้วย ESP32 + WebSocket พร้อมคำแนะนำการบริโภค
+      </p>
     </div>
   );
 }
